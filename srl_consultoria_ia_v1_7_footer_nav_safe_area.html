@@ -1,0 +1,1599 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>SRL — Consultoría IA · v1.7 · footer nav safe area</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&amp;family=Onest:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<style>
+:root{--c:#F2F4F1;--ca:#E6EBE7;--i:#111816;--m:#59635F;--h:#C8D0CC;--p:#165B5F;--pd:#10474A;--s:#C7E54A;--d:#0B1514;--dm:#B9C6C1}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#d6d9d5;color:var(--i);font-family:Onest,Arial,sans-serif;overflow-x:hidden}
+.deck{scroll-snap-type:y proximity}.slide{min-height:100vh;width:100vw;padding:6vh 6vw 4vh;background:var(--c);scroll-snap-align:start;display:flex;flex-direction:column;overflow:hidden;position:relative}
+.alt{background:var(--ca)}.dark{background:var(--d);color:#f1f5f2}.brand{background:var(--p);color:#f1f5f2}
+.kicker,.idx,.meta,.src,.role{font-family:"IBM Plex Mono",monospace}.kicker{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--p)}.dark .kicker,.brand .kicker{color:#d4e8e4}
+.mark{width:64px;height:2px;background:var(--s);margin-top:18px}
+h1,h2,h3,p{margin:0}h1{font-size:clamp(54px,6.2vw,92px);line-height:.98;letter-spacing:-.045em;font-weight:600;max-width:11ch}
+h2{font-size:clamp(38px,4.4vw,64px);line-height:1.02;letter-spacing:-.035em;font-weight:500;max-width:16ch}
+h3{font-size:clamp(21px,1.9vw,29px);line-height:1.1;letter-spacing:-.018em;font-weight:500}
+p{font-size:clamp(16px,1.2vw,18px);line-height:1.5}.lead{font-size:clamp(20px,1.7vw,26px);line-height:1.42;color:var(--m);max-width:62ch}.dark .lead,.brand .lead{color:var(--dm)}
+.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:24px}.c4{grid-column:span 4}.c5{grid-column:span 5}.c7{grid-column:span 7}.c8{grid-column:span 8}
+.footer{margin-top:auto;padding-top:12px;border-top:1px solid var(--h);display:flex;justify-content:space-between;font:400 10px/1.3 "IBM Plex Mono",monospace;color:var(--m)}.dark .footer,.brand .footer{border-color:rgba(255,255,255,.18);color:var(--dm)}
+.callout{border-left:2px solid var(--p);padding-left:16px}.dark .callout,.brand .callout{border-left-color:var(--s)}.callout .meta{display:block;font-size:10px;text-transform:uppercase;letter-spacing:.06em;color:var(--m);margin-bottom:10px}.dark .callout .meta,.brand .callout .meta{color:var(--dm)}
+.reveal{opacity:0;transform:translateY(14px);transition:.44s cubic-bezier(.22,1,.36,1)}.reveal.in{opacity:1;transform:none}
+
+/* 1 */
+.cover{margin-top:10vh;display:grid;grid-template-columns:8fr 4fr;gap:48px;align-items:end}.cover .lead{max-width:30ch}.ghost{position:absolute;right:-2vw;bottom:7vh;font-size:min(26vw,360px);line-height:.75;font-weight:500;letter-spacing:-.09em;color:rgba(22,91,95,.055);pointer-events:none}
+/* 2 */
+.pos{margin-top:11vh;align-items:start}.pos h2{font-size:clamp(50px,5.7vw,82px);max-width:9.5ch}.pos-side{padding-top:22px;display:flex;flex-direction:column;gap:34px}.principle{border-left:2px solid var(--s);padding-left:14px;font:400 11px/1.4 "IBM Plex Mono",monospace;letter-spacing:.06em;text-transform:uppercase}
+/* 3 */
+.stair{position:relative;margin-top:6vh;height:55vh}.stair:before{content:"";position:absolute;left:2%;bottom:12%;width:90%;height:55%;border-left:1px solid rgba(255,255,255,.2);border-bottom:1px solid rgba(255,255,255,.2);transform:skewY(-11deg);transform-origin:left bottom}
+.ss{position:absolute;width:21%}.ss:nth-child(1){left:0;bottom:0}.ss:nth-child(2){left:26%;bottom:17%}.ss:nth-child(3){left:52%;bottom:34%}.ss:nth-child(4){left:78%;bottom:51%}.ss .idx{font-size:11px;color:var(--dm);margin-bottom:10px}.ss p{font-size:15px;color:var(--dm);margin-top:8px}.ss:after{content:"";display:block;width:6px;height:6px;background:var(--s);margin-top:14px}
+/* 4 */
+.one3{margin-top:8vh;align-items:start}.one3 h2{font-size:clamp(48px,5.3vw,76px);max-width:9ch}.stack{border-top:2px solid var(--i)}.prow{display:grid;grid-template-columns:58px 1fr;gap:16px;padding:20px 0 22px;border-bottom:1px solid var(--h)}.prow .idx{font-size:10px;color:var(--m);padding-top:4px}.prow p{font-size:15.5px;color:var(--m);margin-top:7px}
+/* 5 */
+.eindex{margin-top:6vh;border-top:2px solid var(--p)}.erow{display:grid;grid-template-columns:68px 4fr 6fr;gap:24px;padding:21px 0 23px;border-bottom:1px solid var(--h)}.erow .idx{font-size:10px;color:var(--m);padding-top:6px}.erow h3{font-size:clamp(24px,2.3vw,35px)}.erow p{font-size:15.5px;color:var(--m)}
+/* 6 + 11 */
+.ledger-intro{margin-top:4vh;max-width:780px}.ledger{margin-top:5vh;border-top:2px solid var(--p)}.lrow{display:grid;grid-template-columns:66px 3fr 7fr;gap:22px;padding:14px 0 16px;border-bottom:1px solid var(--h)}.lrow .idx{font-size:10px;color:var(--m);padding-top:4px}.lrow h3{font-size:19px}.lrow p{font-size:15.5px;color:var(--m)}
+/* 7 */
+.hub{position:relative;flex:1;min-height:520px;margin-top:4vh}.center{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:28%;min-width:280px;padding:28px;border:1px solid var(--p);background:var(--ca)}.center .meta{font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:var(--m);margin-bottom:14px}.center h3{font-size:clamp(26px,2.5vw,38px)}
+.node{position:absolute;width:28%;max-width:360px;padding-top:14px;border-top:1px solid var(--h)}.node h3{font-size:22px;margin-bottom:7px}.node p{font-size:15px;color:var(--m)}.n1{left:2%;top:9%}.n2{right:2%;top:9%}.n3{left:2%;bottom:8%}.n4{right:2%;bottom:8%}.line{position:absolute;background:var(--h)}.h1{left:30%;top:26%;width:20%;height:1px}.h2{left:50%;top:26%;width:20%;height:1px}.h3{left:30%;bottom:26%;width:20%;height:1px}.h4{left:50%;bottom:26%;width:20%;height:1px}.v1{left:50%;top:26%;width:1px;height:24%}.v2{left:50%;bottom:26%;width:1px;height:24%}.dot{position:absolute;width:8px;height:8px;background:var(--s);left:calc(50% - 4px);top:calc(50% - 4px)}
+/* 8 */
+.catalog{margin-top:5vh;border-top:2px solid currentColor}.crow{display:grid;grid-template-columns:4fr 8fr;gap:40px;padding:19px 0 21px;border-bottom:1px solid rgba(255,255,255,.18)}.crow h3{font-size:clamp(25px,2.35vw,35px)}.cp{display:grid;grid-template-columns:repeat(2,1fr);gap:8px 26px}.cp p{font-size:15px;color:var(--dm)}.cp p:before{content:"— ";font-family:"IBM Plex Mono";color:var(--s)}
+/* 9 */
+.gov{margin-top:4vh;align-items:start}.govlist{margin-top:26px;border-top:2px solid var(--p)}.gitem{display:grid;grid-template-columns:42px 1fr;gap:12px;padding:11px 0 13px;border-bottom:1px solid var(--h)}.gitem .idx{font-size:10px;color:var(--m);padding-top:3px}.gitem p{font-size:15px}.triad{font-size:clamp(42px,5vw,72px);line-height:.9;letter-spacing:-.05em;font-weight:500;margin-bottom:44px}.triad span{display:block}.triad span:nth-child(2){padding-left:10%}.triad span:nth-child(3){padding-left:22%}
+/* 10 */
+.team{margin-top:6vh;display:grid;grid-template-columns:repeat(3,1fr);gap:42px}.person{border-top:2px solid var(--p);padding-top:18px}.role{font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:var(--p);margin:8px 0 18px}.person p{font-size:15.5px;color:var(--m)}
+/* 12 */
+.evidence{position:relative;flex:1;min-height:560px;margin-top:2vh}.metric{position:absolute}.num{font-size:clamp(72px,9vw,136px);line-height:.82;letter-spacing:-.07em;font-weight:500}.mt{margin-top:17px;font-size:18px;line-height:1.35;max-width:34ch}.src{margin-top:11px;font-size:9.5px;line-height:1.45;color:var(--m);max-width:46ch}.m1{left:0;top:4%;width:42%}.m1 .num{color:var(--p)}.m2{right:2%;top:21%;width:48%}.m2 .num{font-size:clamp(58px,7vw,108px)}.m3{left:18%;bottom:2%;width:42%}.m3 .num{font-size:clamp(66px,8vw,120px)}.espine{position:absolute;left:45%;top:14%;bottom:14%;width:1px;background:var(--h)}
+/* 13 */
+.exp{margin-top:6vh;align-items:start}.exp h2{font-size:clamp(46px,5vw,72px);max-width:10ch}.caps{border-top:2px solid var(--p)}.cap{display:grid;grid-template-columns:38px 1fr;gap:12px;padding:12px 0 14px;border-bottom:1px solid var(--h)}.cap .idx{font-size:10px;color:var(--m);padding-top:3px}.cap p{font-size:15px}
+/* 14 */
+.close{margin-top:8vh;display:grid;grid-template-columns:7.5fr 4.5fr;gap:54px}.close h2{font-size:clamp(56px,6vw,84px);max-width:9ch}.cside{border-top:2px solid #f1f5f2}.cpoint{padding:20px 0 22px;border-bottom:1px solid rgba(255,255,255,.18)}.cpoint h3{font-size:24px;margin-bottom:8px}.cpoint p{font-size:15.5px;color:var(--dm)}.cta{margin-top:auto;border-top:1px solid rgba(255,255,255,.2);padding-top:18px;display:grid;grid-template-columns:2fr 7fr 1fr;gap:24px;align-items:center}.cta .meta{font-size:10px;text-transform:uppercase;letter-spacing:.06em;color:var(--dm)}.cta strong{font-size:clamp(22px,2.2vw,34px);font-weight:500}.arrow{font-size:34px;text-align:right;color:var(--s)}
+/* nav */
+.nav{position:fixed;right:18px;bottom:18px;display:flex;gap:8px;align-items:center;z-index:30}.nav button,.count{border:1px solid rgba(17,24,22,.15);background:rgba(242,244,241,.92);color:var(--i);border-radius:2px}.nav button{width:38px;height:38px;cursor:pointer}.count{padding:7px 9px;font:400 10px "IBM Plex Mono"}
+@media(max-width:900px){.slide{padding:46px 24px 32px;height:auto}.grid,.cover,.close{display:block}.c4,.c5,.c7,.c8{grid-column:auto}.ghost{display:none}.pos-side{margin-top:34px}.stair{height:auto}.stair:before{display:none}.ss{position:relative!important;left:auto!important;right:auto!important;bottom:auto!important;top:auto!important;width:auto;padding:18px 0 22px;border-top:1px solid rgba(255,255,255,.18)}.one3>div:first-child{margin-bottom:36px}.erow,.lrow{grid-template-columns:42px 1fr}.erow p,.lrow p{grid-column:2;margin-top:5px}.hub{min-height:0}.center,.node{position:relative;left:auto!important;right:auto!important;top:auto!important;bottom:auto!important;width:auto;max-width:none;transform:none;margin-top:20px}.line,.dot{display:none}.crow{display:block}.crow h3{margin-bottom:12px}.cp{grid-template-columns:1fr}.team{grid-template-columns:1fr}.evidence{min-height:0}.metric{position:relative;left:auto!important;right:auto!important;top:auto!important;bottom:auto!important;width:auto!important;padding:22px 0 26px;border-top:1px solid var(--h)}.espine{display:none}.cside{margin-top:36px}.cta{grid-template-columns:1fr;gap:10px}.arrow{text-align:left}.nav{display:none}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}}
+@media print{body{background:#fff}.nav{display:none}.slide{width:13.333in;height:7.5in;min-height:7.5in;page-break-after:always}}
+
+
+/* =========================================================
+   v0.8 — hierarchy refinement from review
+   ========================================================= */
+
+/* 01 — ghost word is neutral, not green */
+.ghost{
+  color:rgba(17,24,22,.035);
+}
+
+/* 05 — same contrast family as slide 02 */
+#s5.brand{
+  background:var(--p);
+  color:#F1F5F2;
+}
+#s5.brand .kicker{color:#D4E8E4}
+#s5.brand h2,#s5.brand h3{color:#F1F5F2}
+#s5.brand .erow{
+  border-color:rgba(240,245,242,.20);
+}
+#s5.brand .eindex{
+  border-top-color:var(--s);
+}
+#s5.brand .erow .idx,
+#s5.brand .erow p{
+  color:var(--dm);
+}
+#s5.brand .footer{
+  border-color:rgba(240,245,242,.18);
+  color:var(--dm);
+}
+
+/* 06 — large research-led blocks with transparent numbers */
+.impact-squares{
+  margin-top:5vh;
+  display:grid;
+  grid-template-columns:repeat(12,minmax(0,1fr));
+  grid-auto-rows:minmax(145px,1fr);
+  gap:14px;
+  flex:1;
+  min-height:470px;
+}
+.impact-square{
+  position:relative;
+  overflow:hidden;
+  padding:26px 28px;
+  border-radius:2px;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-end;
+  min-height:145px;
+}
+.impact-square h3,
+.impact-square p{
+  position:relative;
+  z-index:2;
+}
+.impact-square h3{
+  font-size:clamp(23px,2.1vw,32px);
+  margin-bottom:9px;
+}
+.impact-square p{
+  font-size:15.5px;
+  line-height:1.45;
+  max-width:30ch;
+}
+.impact-square .bg-num,
+.mosaic-box .bg-num{
+  position:absolute;
+  right:14px;
+  top:-18px;
+  z-index:1;
+  font:500 clamp(72px,8vw,124px)/1 "Onest",sans-serif;
+  letter-spacing:-.08em;
+  opacity:.08;
+  pointer-events:none;
+}
+.impact-square.sq-large{
+  grid-column:span 5;
+  grid-row:span 2;
+  background:var(--p);
+  color:#F1F5F2;
+}
+.impact-square.sq-large p{color:#D4E8E4}
+.impact-square.sq-small{
+  grid-column:span 3;
+  background:var(--ca);
+  color:var(--i);
+}
+.impact-square.sq-small + .sq-small{
+  grid-column:span 4;
+  background:var(--i);
+  color:#F1F5F2;
+}
+.impact-square.sq-small + .sq-small p{color:var(--dm)}
+.impact-square.sq-wide{
+  grid-column:span 4;
+  background:var(--ca);
+  color:var(--i);
+}
+.impact-square.sq-tall{
+  grid-column:span 3;
+  grid-row:span 1;
+  background:var(--p);
+  color:#F1F5F2;
+}
+.impact-square.sq-tall p{color:#D4E8E4}
+
+/* 07 + 08 — explicit breathing between eyebrow and main title */
+.section-title-spaced > .kicker{
+  margin-bottom:26px;
+}
+.section-title-spaced > .kicker + .reveal,
+.section-title-spaced > .kicker + div.reveal{
+  margin-top:0;
+}
+
+/* 08 — one industry per row; no ambiguous middle-column packing */
+.industry-ledger{
+  margin-top:5vh;
+  border-top:2px solid rgba(240,245,242,.88);
+}
+.industry-row{
+  display:grid;
+  grid-template-columns:54px minmax(230px,3.2fr) 7.8fr;
+  gap:24px;
+  align-items:start;
+  padding:18px 0 20px;
+  border-bottom:1px solid rgba(240,245,242,.18);
+}
+.industry-row .idx{
+  font-size:10px;
+  padding-top:7px;
+  color:var(--dm);
+}
+.industry-row h3{
+  font-size:clamp(24px,2.2vw,34px);
+}
+.industry-points{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px 28px;
+  align-items:flex-start;
+}
+.industry-points p{
+  position:relative;
+  flex:1 1 240px;
+  min-width:220px;
+  font-size:15.5px;
+  color:var(--dm);
+  padding-left:18px;
+}
+.industry-points p::before{
+  content:"—";
+  position:absolute;
+  left:0;
+  color:var(--s);
+  font-family:"IBM Plex Mono",monospace;
+}
+
+/* 09 — same composition, more breathing */
+.gov-air .gov{
+  margin-top:6vh;
+  gap:42px;
+}
+.gov-air .govlist{
+  margin-top:34px;
+}
+.gov-air .gitem{
+  padding:14px 0 17px;
+}
+.gov-air .triad{
+  margin-bottom:58px;
+}
+.gov-air .callout{
+  padding-top:6px;
+  padding-bottom:6px;
+}
+
+/* 13 — high-contrast rectangles, asymmetrical instead of a plain list */
+.exp-v08{
+  grid-template-columns:repeat(12,minmax(0,1fr));
+  gap:34px;
+}
+.exp-v08 > .c7{
+  grid-column:span 5;
+}
+.exp-v08 > .contrast-mosaic{
+  grid-column:span 7;
+}
+.contrast-mosaic{
+  display:grid;
+  grid-template-columns:repeat(6,minmax(0,1fr));
+  grid-auto-rows:minmax(125px,auto);
+  gap:12px;
+}
+.mosaic-box{
+  position:relative;
+  overflow:hidden;
+  border-radius:2px;
+  padding:22px 22px 20px;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-end;
+}
+.mosaic-box h3,.mosaic-box p{position:relative;z-index:2}
+.mosaic-box h3{
+  font-size:clamp(20px,1.8vw,27px);
+  margin-bottom:7px;
+}
+.mosaic-box p{
+  font-size:14.5px;
+  line-height:1.42;
+}
+.mosaic-a{
+  grid-column:span 4;
+  grid-row:span 2;
+  background:var(--p);
+  color:#F1F5F2;
+}
+.mosaic-a p,.mosaic-d p,.mosaic-f p{color:#D4E8E4}
+.mosaic-b{
+  grid-column:span 2;
+  background:var(--i);
+  color:#F1F5F2;
+}
+.mosaic-b p{color:var(--dm)}
+.mosaic-c{
+  grid-column:span 2;
+  background:var(--ca);
+}
+.mosaic-d{
+  grid-column:span 2;
+  background:var(--p);
+  color:#F1F5F2;
+}
+.mosaic-e{
+  grid-column:span 3;
+  background:var(--ca);
+}
+.mosaic-f{
+  grid-column:span 3;
+  background:var(--i);
+  color:#F1F5F2;
+}
+.mosaic-box .bg-num{
+  opacity:.07;
+  right:10px;
+  top:-14px;
+}
+
+@media(max-width:900px){
+  .impact-squares{
+    display:block;
+    min-height:0;
+  }
+  .impact-square{
+    margin-top:12px;
+    min-height:170px;
+  }
+  .industry-row{
+    display:block;
+  }
+  .industry-row .idx{
+    margin-bottom:8px;
+  }
+  .industry-row h3{
+    margin-bottom:12px;
+  }
+  .industry-points{
+    display:block;
+  }
+  .industry-points p{
+    min-width:0;
+    margin-bottom:7px;
+  }
+  .exp-v08{
+    display:block;
+  }
+  .contrast-mosaic{
+    margin-top:34px;
+    display:block;
+  }
+  .mosaic-box{
+    min-height:160px;
+    margin-top:12px;
+  }
+}
+
+
+/* =========================================================
+   v0.9 — precision fixes after detailed review
+   ========================================================= */
+
+/* Slide 01 — the IA ghost is explicit neutral grey, not alpha over the greenish canvas */
+#s1 .ghost{
+  color:#E9E9E9 !important;
+  opacity:1 !important;
+}
+
+/* Slide 06 — same colour family and much closer block sizes */
+#s6 .impact-squares{
+  grid-template-columns:repeat(12,minmax(0,1fr));
+  grid-auto-rows:minmax(155px,1fr);
+  gap:14px;
+}
+#s6 .impact-square{
+  background:var(--p) !important;
+  color:#F1F5F2 !important;
+  grid-row:span 1 !important;
+  min-height:155px;
+}
+#s6 .impact-square p{
+  color:#D4E8E4 !important;
+}
+#s6 .impact-square .bg-num{
+  color:#F1F5F2;
+  opacity:.075;
+}
+/* 3 balanced blocks on top, 2 balanced below */
+#s6 .impact-square:nth-child(1),
+#s6 .impact-square:nth-child(2),
+#s6 .impact-square:nth-child(3){
+  grid-column:span 4 !important;
+}
+#s6 .impact-square:nth-child(4),
+#s6 .impact-square:nth-child(5){
+  grid-column:span 6 !important;
+}
+
+/* Slide 08 — true two-column information architecture:
+   industry identity | examples. No independent middle column. */
+#s8 .industry-ledger{
+  display:none !important;
+}
+.industry-ledger-v09{
+  margin-top:5vh;
+  border-top:2px solid rgba(240,245,242,.88);
+}
+.industry-row-v09{
+  display:grid;
+  grid-template-columns:minmax(260px,4fr) minmax(0,8fr);
+  gap:48px;
+  align-items:start;
+  padding:20px 0 22px;
+  border-bottom:1px solid rgba(240,245,242,.18);
+}
+.industry-name-v09{
+  display:grid;
+  grid-template-columns:42px 1fr;
+  gap:14px;
+  align-items:start;
+}
+.industry-name-v09 .idx{
+  font-size:10px;
+  color:var(--dm);
+  padding-top:7px;
+}
+.industry-name-v09 h3{
+  font-size:clamp(24px,2.2vw,34px);
+}
+.industry-points-v09{
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+}
+.industry-points-v09 p{
+  position:relative;
+  padding-left:18px;
+  font-size:15.5px;
+  line-height:1.42;
+  color:var(--dm);
+  max-width:70ch;
+}
+.industry-points-v09 p::before{
+  content:"—";
+  position:absolute;
+  left:0;
+  color:var(--s);
+  font-family:"IBM Plex Mono",monospace;
+}
+
+/* Slide 13 — same-colour blocks, same logic as slide 06 */
+#s13 .contrast-mosaic{
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  grid-auto-rows:minmax(150px,1fr);
+  gap:14px;
+}
+#s13 .mosaic-box{
+  background:var(--p) !important;
+  color:#F1F5F2 !important;
+  grid-column:span 1 !important;
+  grid-row:span 1 !important;
+  min-height:150px;
+}
+#s13 .mosaic-box p{
+  color:#D4E8E4 !important;
+}
+#s13 .mosaic-box .bg-num{
+  color:#F1F5F2;
+  opacity:.075;
+}
+#s13 .exp-v08 > .c7{
+  grid-column:span 4;
+}
+#s13 .exp-v08 > .contrast-mosaic{
+  grid-column:span 8;
+}
+
+@media(max-width:900px){
+  #s6 .impact-square{
+    min-height:165px;
+  }
+  .industry-row-v09{
+    display:block;
+  }
+  .industry-name-v09{
+    margin-bottom:14px;
+  }
+  #s13 .contrast-mosaic{
+    display:block;
+  }
+  #s13 .mosaic-box{
+    min-height:165px;
+    margin-top:12px;
+  }
+}
+
+
+/* =========================================================
+   v1.0 — fullscreen slide transitions + unified motion
+   ========================================================= */
+:root{
+  --slide-motion-duration:.62s;
+  --slide-motion-ease:cubic-bezier(.22,1,.36,1);
+}
+
+/* Presentation behaves as a true one-screen-at-a-time deck. */
+html,body{
+  width:100%;
+  height:100%;
+  overflow:hidden;
+}
+.deck{
+  position:relative;
+  width:100vw;
+  height:100dvh;
+  overflow:hidden;
+  scroll-snap-type:none;
+}
+.slide{
+  position:absolute;
+  inset:0;
+  width:100vw;
+  height:100dvh;
+  min-height:100dvh;
+  overflow:hidden;
+  opacity:0;
+  transform:translate3d(0,100%,0);
+  transition:
+    transform var(--slide-motion-duration) var(--slide-motion-ease),
+    opacity var(--slide-motion-duration) var(--slide-motion-ease);
+  will-change:transform,opacity;
+  pointer-events:none;
+  z-index:1;
+}
+.slide.is-before{
+  opacity:0;
+  transform:translate3d(0,-100%,0);
+}
+.slide.is-active{
+  opacity:1;
+  transform:translate3d(0,0,0);
+  pointer-events:auto;
+  z-index:3;
+}
+.slide.is-after{
+  opacity:0;
+  transform:translate3d(0,100%,0);
+}
+
+/* One motion language for every visual block, including footer and ghost. */
+.slide > *{
+  opacity:0;
+  transform:translate3d(0,18px,0);
+  transition:
+    opacity var(--slide-motion-duration) var(--slide-motion-ease),
+    transform var(--slide-motion-duration) var(--slide-motion-ease);
+}
+.slide.is-active > *{
+  opacity:1;
+  transform:translate3d(0,0,0);
+}
+.slide .reveal,
+.slide .reveal.in{
+  opacity:0;
+  transform:translate3d(0,18px,0);
+  transition:
+    opacity var(--slide-motion-duration) var(--slide-motion-ease),
+    transform var(--slide-motion-duration) var(--slide-motion-ease);
+}
+.slide.is-active .reveal,
+.slide.is-active .reveal.in{
+  opacity:1;
+  transform:translate3d(0,0,0);
+}
+
+/* Navigation controls share exactly the same box height. */
+.nav button,.count{
+  height:38px;
+  min-height:38px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding-top:0;
+  padding-bottom:0;
+}
+.count{
+  min-width:64px;
+  padding-left:9px;
+  padding-right:9px;
+}
+.nav button{
+  padding:0;
+  line-height:1;
+}
+
+@media(max-width:900px){
+  .deck{height:100dvh}
+  .slide{
+    height:100dvh;
+    min-height:100dvh;
+    overflow-y:auto;
+    overscroll-behavior:contain;
+  }
+}
+
+@media(prefers-reduced-motion:reduce){
+  .slide,
+  .slide > *,
+  .slide .reveal,
+  .slide .reveal.in{
+    transition:none !important;
+  }
+}
+
+
+
+/* =========================================================
+   v1.1 — richer element animations and count-up numbers
+   ========================================================= */
+:root{
+  --item-stagger:72ms;
+  --item-side-offset:42px;
+  --item-up-offset:26px;
+}
+
+/* direct slide children stay stable; motion is handled per element */
+.slide > *{
+  opacity:1 !important;
+  transform:none !important;
+  transition:none !important;
+}
+
+.motion-item{
+  opacity:0;
+  transform:translate3d(var(--mx,0),var(--my,var(--item-up-offset)),0) scale(var(--ms,1));
+  transition:
+    opacity var(--slide-motion-duration) var(--slide-motion-ease),
+    transform var(--slide-motion-duration) var(--slide-motion-ease);
+  transition-delay:calc(var(--motion-order,0) * var(--item-stagger));
+  will-change:opacity,transform;
+}
+.slide.is-active .motion-item{
+  opacity:1;
+  transform:translate3d(0,0,0) scale(1);
+}
+.slide:not(.is-active) .motion-item{
+  transition-delay:0s;
+}
+.motion-up{ --mx:0px; --my:var(--item-up-offset); --ms:1; }
+.motion-side-left{ --mx:calc(var(--item-side-offset) * -1); --my:0px; --ms:1; }
+.motion-side-right{ --mx:var(--item-side-offset); --my:0px; --ms:1; }
+.motion-fade{ --mx:0px; --my:0px; --ms:1; }
+.motion-scale{ --mx:0px; --my:10px; --ms:.96; }
+
+/* stronger alpha feeling on side-entering cards */
+.impact-square.motion-item,
+.mosaic-box.motion-item,
+.person.motion-item,
+.metric.motion-item,
+.center.motion-item,
+.node.motion-item{
+  opacity:0;
+}
+
+/* rows rise from below */
+.prow.motion-item,
+.erow.motion-item,
+.lrow.motion-item,
+.industry-row-v09.motion-item,
+.gitem.motion-item,
+.cpoint.motion-item,
+.ss.motion-item{
+  --mx:0px;
+  --my:30px;
+}
+
+/* decorative numbers keep their alpha treatment */
+.bg-num,
+.num{
+  will-change:contents;
+}
+
+@media(prefers-reduced-motion:reduce){
+  .motion-item{
+    opacity:1 !important;
+    transform:none !important;
+    transition:none !important;
+  }
+}
+
+
+
+/* =========================================================
+   v1.2 — slower ease-in motion + slide 03 choreography + slide 07 layout fix
+   ========================================================= */
+:root{
+  --slide-motion-duration:1.08s;
+  --slide-motion-ease:ease-in;
+  --slow-motion-duration:1.34s;
+  --slow-motion-ease:ease-in;
+  --square-motion-duration:.62s;
+  --square-motion-ease:ease-in;
+  --item-stagger:118ms;
+}
+
+/* Slow, deliberate motion for normal elements. */
+.motion-item{
+  transition-duration:var(--slow-motion-duration);
+  transition-timing-function:var(--slow-motion-ease);
+}
+
+/* Cards/squares stay intentionally quicker. */
+.impact-square.motion-item,
+.mosaic-box.motion-item{
+  transition-duration:var(--square-motion-duration);
+  transition-timing-function:var(--square-motion-ease);
+}
+
+/* Slide 03: every internal piece enters independently from below. */
+#s3 .ss{
+  opacity:1 !important;
+  transform:none !important;
+  transition:none !important;
+}
+#s3 .ss .idx,
+#s3 .ss h3,
+#s3 .ss p{
+  opacity:0;
+  transform:translate3d(0,34px,0);
+  transition:
+    opacity var(--slow-motion-duration) var(--slow-motion-ease),
+    transform var(--slow-motion-duration) var(--slow-motion-ease);
+}
+#s3.is-active .ss .idx,
+#s3.is-active .ss h3,
+#s3.is-active .ss p{
+  opacity:1;
+  transform:translate3d(0,0,0);
+}
+#s3 .ss:nth-child(1) .idx{transition-delay:.30s}
+#s3 .ss:nth-child(1) h3{transition-delay:.43s}
+#s3 .ss:nth-child(1) p{transition-delay:.56s}
+#s3 .ss:nth-child(2) .idx{transition-delay:.50s}
+#s3 .ss:nth-child(2) h3{transition-delay:.63s}
+#s3 .ss:nth-child(2) p{transition-delay:.76s}
+#s3 .ss:nth-child(3) .idx{transition-delay:.70s}
+#s3 .ss:nth-child(3) h3{transition-delay:.83s}
+#s3 .ss:nth-child(3) p{transition-delay:.96s}
+#s3 .ss:nth-child(4) .idx{transition-delay:.90s}
+#s3 .ss:nth-child(4) h3{transition-delay:1.03s}
+#s3 .ss:nth-child(4) p{transition-delay:1.16s}
+#s3 .stair::before{
+  opacity:0;
+  clip-path:inset(100% 100% 0 0);
+  transition:
+    opacity 1.15s ease-in .20s,
+    clip-path 1.55s ease-in .20s;
+}
+#s3.is-active .stair::before{
+  opacity:1;
+  clip-path:inset(0 0 0 0);
+}
+#s3 .ss::after{
+  opacity:0;
+  transform:translate3d(0,22px,0) scale(.75);
+  transition:
+    opacity .76s ease-in,
+    transform .76s ease-in;
+}
+#s3.is-active .ss::after{
+  opacity:1;
+  transform:translate3d(0,0,0) scale(1);
+}
+#s3 .ss:nth-child(1)::after{transition-delay:.72s}
+#s3 .ss:nth-child(2)::after{transition-delay:.92s}
+#s3 .ss:nth-child(3)::after{transition-delay:1.12s}
+#s3 .ss:nth-child(4)::after{transition-delay:1.32s}
+
+/* Slide 07: true grid instead of absolute positioning; no overlapping text. */
+#s7 .hub{
+  position:relative;
+  flex:1;
+  min-height:0;
+  margin-top:3.5vh;
+  display:grid;
+  grid-template-columns:minmax(0,1fr) minmax(300px,1.05fr) minmax(0,1fr);
+  grid-template-rows:minmax(0,1fr) minmax(0,1fr);
+  grid-template-areas:
+    "n1 center n2"
+    "n3 center n4";
+  gap:26px 34px;
+  align-items:stretch;
+}
+#s7 .center{
+  grid-area:center;
+  position:relative;
+  left:auto;
+  top:auto;
+  transform:none;
+  width:auto;
+  min-width:0;
+  padding:30px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-self:stretch;
+}
+#s7 .node{
+  position:relative;
+  left:auto;
+  right:auto;
+  top:auto;
+  bottom:auto;
+  width:auto;
+  max-width:none;
+  padding:18px 8px 8px 0;
+  align-self:stretch;
+}
+#s7 .node h3{
+  font-size:clamp(19px,1.55vw,24px);
+  line-height:1.12;
+}
+#s7 .node p{
+  font-size:clamp(13px,1.02vw,15px);
+  line-height:1.42;
+  max-width:38ch;
+}
+#s7 .n1{grid-area:n1}
+#s7 .n2{grid-area:n2}
+#s7 .n3{grid-area:n3}
+#s7 .n4{grid-area:n4}
+#s7 .line,
+#s7 .dot{
+  display:none;
+}
+
+@media(max-width:900px){
+  #s7 .hub{
+    display:block;
+    overflow-y:auto;
+  }
+  #s7 .center,
+  #s7 .node{
+    position:relative;
+    width:auto;
+    max-width:none;
+    margin-top:18px;
+  }
+}
+
+
+
+/* =========================================================
+   v1.3 — faster transitions + 25% faster element motion + stable counters
+   ========================================================= */
+:root{
+  /* Slide-to-slide movement is deliberately faster than element choreography. */
+  --slide-motion-duration:.46s;
+  --slide-motion-ease:ease-in;
+
+  /* 25% faster than v1.2. */
+  --slow-motion-duration:1.005s;
+  --square-motion-duration:.465s;
+  --item-stagger:88.5ms;
+}
+
+/* Slide 03 choreography: same sequencing, 25% faster. */
+#s3 .ss:nth-child(1) .idx{transition-delay:.225s}
+#s3 .ss:nth-child(1) h3{transition-delay:.3225s}
+#s3 .ss:nth-child(1) p{transition-delay:.42s}
+#s3 .ss:nth-child(2) .idx{transition-delay:.375s}
+#s3 .ss:nth-child(2) h3{transition-delay:.4725s}
+#s3 .ss:nth-child(2) p{transition-delay:.57s}
+#s3 .ss:nth-child(3) .idx{transition-delay:.525s}
+#s3 .ss:nth-child(3) h3{transition-delay:.6225s}
+#s3 .ss:nth-child(3) p{transition-delay:.72s}
+#s3 .ss:nth-child(4) .idx{transition-delay:.675s}
+#s3 .ss:nth-child(4) h3{transition-delay:.7725s}
+#s3 .ss:nth-child(4) p{transition-delay:.87s}
+#s3 .stair::before{
+  transition:
+    opacity .8625s ease-in .15s,
+    clip-path 1.1625s ease-in .15s;
+}
+#s3 .ss::after{
+  transition:
+    opacity .57s ease-in,
+    transform .57s ease-in;
+}
+#s3 .ss:nth-child(1)::after{transition-delay:.54s}
+#s3 .ss:nth-child(2)::after{transition-delay:.69s}
+#s3 .ss:nth-child(3)::after{transition-delay:.84s}
+#s3 .ss:nth-child(4)::after{transition-delay:.99s}
+
+
+
+/* =========================================================
+   v1.5 — icon system implementation
+   24×24 · stroke 1.5 · butt caps · miter joins
+   Functional use only: process markers + diagram node types.
+   ========================================================= */
+.brand-icon{display:block;width:24px;height:24px;flex:0 0 auto;color:currentColor;overflow:visible;background:none;border:0;border-radius:0;box-shadow:none}
+#s3 .process-icon{width:32px;height:32px;color:#F1F5F2;margin-bottom:16px}
+#s3 .ss .process-icon{opacity:0;transform:translate3d(0,34px,0);transition:opacity var(--slow-motion-duration) var(--slow-motion-ease),transform var(--slow-motion-duration) var(--slow-motion-ease)}
+#s3.is-active .ss .process-icon{opacity:1;transform:translate3d(0,0,0)}
+#s3 .ss:nth-child(1) .process-icon{transition-delay:.16s}
+#s3 .ss:nth-child(2) .process-icon{transition-delay:.31s}
+#s3 .ss:nth-child(3) .process-icon{transition-delay:.46s}
+#s3 .ss:nth-child(4) .process-icon{transition-delay:.61s}
+#s7 .node-icon{width:20px;height:20px;color:var(--i);margin-bottom:12px}
+#s7 .center .node-icon{color:var(--p);margin-bottom:14px}
+#s7 .node{display:flex;flex-direction:column}
+#s7 .center{align-items:flex-start}
+@media(prefers-reduced-motion:reduce){#s3 .ss .process-icon{opacity:1!important;transform:none!important;transition:none!important}}
+
+
+/* =========================================================
+   v1.6 — design-system correction pass
+   Hierarchy + composition + diagrams + evidence
+   ========================================================= */
+
+/* Typography: hierarchy comes from scale/space, not heavier weight. */
+h1{font-weight:500}
+
+/* Slide 01: no decorative ghost word. */
+#s1 .ghost{display:none!important}
+
+/* Slide 03: true process rail, not decorative staircase. */
+#s3 .stair.process-rail-v16{
+  position:relative;
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:34px;
+  height:auto;
+  min-height:0;
+  margin-top:7vh;
+  padding-top:34px;
+}
+#s3 .stair.process-rail-v16::before{
+  content:"";
+  position:absolute;
+  left:0;
+  right:0;
+  top:0;
+  bottom:auto;
+  width:100%;
+  height:1px;
+  border:0;
+  background:rgba(240,245,242,.28);
+  transform:none;
+  opacity:1;
+  clip-path:none;
+  transition:none;
+}
+#s3 .process-rail-v16 .ss{
+  position:relative!important;
+  left:auto!important;
+  right:auto!important;
+  top:auto!important;
+  bottom:auto!important;
+  width:auto!important;
+  padding:0 22px 0 0;
+}
+#s3 .process-rail-v16 .ss::after{
+  display:none!important;
+}
+#s3 .process-rail-v16 .process-icon{
+  margin-bottom:18px;
+}
+#s3 .process-rail-v16 .idx{
+  margin-bottom:12px;
+}
+
+/* Slide 06: indexed editorial layout. No tile/dashboard grammar. */
+#s6 .usecase-index{
+  margin-top:5vh;
+  border-top:2px solid var(--p);
+}
+#s6 .usecase-row{
+  display:grid;
+  grid-template-columns:110px minmax(190px,3fr) 7fr;
+  gap:28px;
+  align-items:center;
+  min-height:78px;
+  padding:13px 0 15px;
+  border-bottom:1px solid var(--h);
+}
+#s6 .usecase-row .usecase-num{
+  font-family:Onest,Arial,sans-serif;
+  font-size:clamp(34px,3.2vw,50px);
+  line-height:.9;
+  font-weight:500;
+  letter-spacing:-.05em;
+  color:rgba(17,24,22,.16);
+  padding:0;
+}
+#s6 .usecase-row h3{
+  font-size:clamp(20px,1.65vw,27px);
+}
+#s6 .usecase-row p{
+  margin:0;
+  font-size:15.5px;
+  line-height:1.45;
+  color:var(--m);
+}
+
+/* Slide 07: grid stays clean, but relationships are restored as a diagram. */
+#s7 .hub{isolation:isolate}
+#s7 .hub-connectors-v16{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  color:var(--h);
+  z-index:0;
+  pointer-events:none;
+}
+#s7 .center,#s7 .node{
+  position:relative;
+  z-index:1;
+  background:var(--ca);
+}
+#s7 .node{
+  padding-right:16px;
+}
+#s7 .center{
+  border:1px solid var(--p);
+}
+
+/* Slide 08: lime marks structure once; it is not a repeated bullet colour. */
+#s8 .industry-ledger-v09{
+  border-top-color:var(--s);
+}
+#s8 .industry-points-v09 p::before{
+  color:var(--dm);
+}
+
+/* Slide 09: establish an explicit L1 before explanation and evidence. */
+#s9 .gov-title-v16{
+  margin-top:2.5vh;
+}
+#s9 .gov-title-v16 h2{
+  font-size:clamp(34px,3.4vw,50px);
+  line-height:1.06;
+  max-width:17ch;
+}
+#s9 .gov-air .gov,
+#s9 .gov{
+  margin-top:3vh;
+  gap:46px;
+}
+#s9 .c7 .lead{
+  font-size:clamp(17px,1.25vw,19px);
+  line-height:1.46;
+  max-width:64ch;
+}
+#s9 .govlist{
+  margin-top:20px;
+}
+#s9 .gitem{
+  padding:9px 0 11px;
+}
+#s9 .triad{
+  font-size:clamp(34px,3.7vw,54px);
+  line-height:.94;
+  margin-bottom:38px;
+  color:var(--m);
+}
+#s9 .triad span:nth-child(2){padding-left:8%}
+#s9 .triad span:nth-child(3){padding-left:16%}
+
+/* Slide 12: MGI-style evidence anatomy with one dominant metric. */
+#s12 .evidence-head-v16{
+  margin-top:2.5vh;
+}
+#s12 .evidence-head-v16 h2{
+  font-size:clamp(32px,3.25vw,48px);
+  line-height:1.07;
+  max-width:22ch;
+}
+#s12 .evidence-context-v16{
+  margin-top:14px;
+  font:400 12px/1.45 "IBM Plex Mono",monospace;
+  color:var(--m);
+  max-width:82ch;
+}
+#s12 .evidence-v16{
+  margin-top:4vh;
+  display:grid;
+  grid-template-columns:7fr 5fr;
+  gap:52px;
+  align-items:stretch;
+  min-height:0;
+  flex:1;
+}
+#s12 .metric{
+  position:relative;
+  left:auto!important;
+  right:auto!important;
+  top:auto!important;
+  bottom:auto!important;
+  width:auto!important;
+}
+#s12 .metric-primary-v16{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  border-top:2px solid var(--p);
+  padding-top:24px;
+}
+#s12 .metric-primary-v16 .num{
+  color:var(--p);
+  font-size:clamp(88px,10vw,150px);
+}
+#s12 .metric-primary-v16 .mt{
+  font-size:20px;
+  max-width:31ch;
+}
+#s12 .metric-secondary-stack-v16{
+  display:grid;
+  grid-template-rows:1fr 1fr;
+  gap:0;
+  border-top:1px solid var(--h);
+}
+#s12 .metric-secondary-v16{
+  padding:22px 0 20px;
+  border-bottom:1px solid var(--h);
+}
+#s12 .metric-secondary-v16 .num{
+  color:var(--i);
+  font-size:clamp(48px,5.4vw,80px);
+  letter-spacing:-.055em;
+}
+#s12 .metric-secondary-v16 .mt{
+  font-size:16px;
+  max-width:38ch;
+  margin-top:12px;
+}
+#s12 .metric-secondary-v16 .src,
+#s12 .metric-primary-v16 .src{
+  margin-top:10px;
+}
+
+/* Slide 13: real system diagram, not a six-tile mosaic. */
+#s13 .exp-v16{
+  margin-top:5vh;
+  align-items:start;
+}
+#s13 .exp-v16 > .c4{
+  grid-column:span 4;
+}
+#s13 .exp-v16 > .c8{
+  grid-column:span 8;
+}
+#s13 .exp-v16 h2{
+  font-size:clamp(40px,4.25vw,60px);
+  max-width:10ch;
+}
+#s13 .system-diagram-v16{
+  position:relative;
+  min-height:455px;
+  padding:42px 26px 76px;
+  border:1px solid var(--h);
+  border-radius:2px;
+  background:var(--ca);
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  grid-template-rows:1fr 1fr;
+  grid-template-areas:
+    "cloud integration automation"
+    "data  integration product";
+  gap:24px 34px;
+  isolation:isolate;
+}
+#s13 .diagram-boundary-label-v16{
+  position:absolute;
+  left:16px;
+  top:12px;
+  z-index:3;
+  font:400 9px/1.3 "IBM Plex Mono",monospace;
+  letter-spacing:.06em;
+  color:var(--m);
+}
+#s13 .system-connectors-v16{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  color:var(--h);
+  pointer-events:none;
+  z-index:0;
+}
+#s13 .sys-node-v16{
+  position:relative;
+  z-index:2;
+  min-height:126px;
+  padding:16px;
+  border:1px solid var(--i);
+  border-radius:2px;
+  background:var(--c);
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:flex-start;
+}
+#s13 .sys-node-v16 h3{
+  margin-top:10px;
+  font-size:20px;
+}
+#s13 .sys-node-v16 p{
+  margin-top:7px;
+  font-size:14px;
+  line-height:1.42;
+  color:var(--m);
+}
+#s13 .sys-node-v16.active{
+  background:var(--p);
+  border-color:var(--p);
+  color:#F1F5F2;
+}
+#s13 .sys-node-v16.active p{
+  color:#D4E8E4;
+}
+#s13 .sys-node-v16.active .node-icon{
+  color:#F1F5F2;
+}
+#s13 .sys-a{grid-area:cloud}
+#s13 .sys-b{grid-area:data}
+#s13 .sys-c{grid-area:integration}
+#s13 .sys-d{grid-area:automation}
+#s13 .sys-e{grid-area:product}
+#s13 .controls-strip-v16{
+  position:absolute;
+  left:26px;
+  right:26px;
+  bottom:18px;
+  z-index:3;
+  display:grid;
+  grid-template-columns:24px 1fr;
+  gap:12px;
+  align-items:center;
+  padding-top:12px;
+  border-top:2px solid var(--p);
+}
+#s13 .controls-icon-v16{
+  width:20px;
+  height:20px;
+  color:var(--p);
+}
+#s13 .controls-copy-v16 h3{
+  display:inline;
+  font-size:15px;
+}
+#s13 .controls-copy-v16 p{
+  display:inline;
+  margin-left:8px;
+  font-size:13px;
+  color:var(--m);
+}
+
+/* Responsive simplification */
+@media(max-width:900px){
+  #s3 .stair.process-rail-v16{
+    display:block;
+    padding-top:0;
+  }
+  #s3 .stair.process-rail-v16::before{display:none}
+  #s3 .process-rail-v16 .ss{
+    border-top:1px solid rgba(240,245,242,.18);
+    padding:18px 0 22px;
+  }
+
+  #s6 .usecase-row{
+    grid-template-columns:64px 1fr;
+    gap:12px 18px;
+  }
+  #s6 .usecase-row p{
+    grid-column:2;
+  }
+
+  #s7 .hub-connectors-v16{display:none}
+
+  #s9 .gov-title-v16 h2{max-width:none}
+
+  #s12 .evidence-v16{
+    display:block;
+  }
+  #s12 .metric-primary-v16,
+  #s12 .metric-secondary-v16{
+    padding:22px 0 24px;
+    border-top:1px solid var(--h);
+  }
+
+  #s13 .exp-v16{
+    display:block;
+  }
+  #s13 .system-diagram-v16{
+    margin-top:32px;
+    display:block;
+    min-height:0;
+    padding:38px 18px 18px;
+  }
+  #s13 .system-connectors-v16{display:none}
+  #s13 .sys-node-v16{
+    min-height:0;
+    margin-top:12px;
+  }
+  #s13 .controls-strip-v16{
+    position:relative;
+    left:auto;
+    right:auto;
+    bottom:auto;
+    margin-top:18px;
+  }
+}
+
+/* =========================================================
+   v1.7 — footer safe area for fixed desktop navigation
+   ========================================================= */
+@media(min-width:901px){
+  .footer > span:last-child{
+    margin-right:88px;
+  }
+}
+@media(max-width:900px), print{
+  .footer > span:last-child{
+    margin-right:0;
+  }
+}
+
+</style>
+</head>
+<body>
+<div class="deck">
+<section class="slide" id="s1"><div class="kicker reveal">SRL · Consultoría IA</div><div class="mark reveal"></div><div class="cover"><div class="reveal"><h1>IA aplicada a procesos, productos y equipos.</h1></div><div class="reveal"><p class="lead">Consultoría e implementación para convertir oportunidades concretas en soluciones operativas.</p></div></div><div class="footer"><span>ESTRATEGIA · IMPLEMENTACIÓN · ADOPCIÓN · v1.6</span><span>01 / 14</span></div></section>
+<section class="slide brand" id="s2"><div class="kicker reveal">Posicionamiento</div><div class="grid pos"><div class="c8 reveal"><h2>La tecnología se adapta al negocio. No al revés.</h2></div><div class="c4 pos-side reveal"><p class="lead">Partimos de los procesos, herramientas y reglas de negocio que ya existen.</p><div class="principle">Encontrarlos donde están.</div></div></div><div class="footer"><span>PRINCIPIO DE TRABAJO</span><span>02 / 14</span></div></section>
+<section class="slide dark" id="s3"><div class="kicker reveal">Cómo trabajamos</div><div class="reveal" style="margin-top:3vh"><h2>De oportunidad a producción.</h2></div><div class="stair process-rail-v16"><div class="ss reveal"><svg aria-hidden="true" class="brand-icon process-icon" fill="none" focusable="false" stroke="currentColor" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="1.5" viewbox="0 0 24 24"><circle cx="10" cy="10" r="5"></circle><path d="M14 14L19 19"></path></svg><div class="idx">01</div><h3>Detectar</h3><p>Procesos, puntos de ganancia, datos y restricciones.</p></div><div class="ss reveal"><svg aria-hidden="true" class="brand-icon process-icon" fill="none" focusable="false" stroke="currentColor" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="1.5" viewbox="0 0 24 24"><rect height="16" rx="1" width="16" x="4" y="4"></rect><rect height="6" rx="0.5" width="6" x="9" y="9"></rect></svg><div class="idx">02</div><h3>Diseñar</h3><p>Arquitectura, integraciones, modelos y experiencia.</p></div><div class="ss reveal"><svg aria-hidden="true" class="brand-icon process-icon" fill="none" focusable="false" stroke="currentColor" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="1.5" viewbox="0 0 24 24"><rect height="8" rx="1" width="8" x="3" y="3"></rect><rect height="8" rx="1" width="8" x="13" y="13"></rect><path d="M11 11L13 13"></path></svg><div class="idx">03</div><h3>Construir</h3><p>Reglas de negocio, workflows, permisos y controles.</p></div><div class="ss reveal"><svg aria-hidden="true" class="brand-icon process-icon" fill="none" focusable="false" stroke="currentColor" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="1.5" viewbox="0 0 24 24"><path d="M5 5V19"></path><path d="M19 5V19"></path><path d="M8 12H17"></path><path d="M14.5 9.5L17 12L14.5 14.5"></path></svg><div class="idx">04</div><h3>Transferir</h3><p>Puesta en marcha, documentación, adopción y mejora continua.</p></div></div><div class="footer"><span>MÉTODO</span><span>03 / 14</span></div></section>
+<section class="slide" id="s4"><div class="kicker reveal">Producción</div><div class="grid one3"><div class="c8 reveal"><h2>No se trata de “usar IA”. Es hacer que funcione en producción.</h2></div><div class="c4 stack reveal"><div class="prow"><div class="idx">01</div><div><h3>Integración</h3><p>Sistemas, datos, permisos y flujos reales.</p></div></div><div class="prow"><div class="idx">02</div><div><h3>Custom build</h3><p>Reglas, UX, automatizaciones y orquestación.</p></div></div><div class="prow"><div class="idx">03</div><div><h3>Controles</h3><p>Seguridad, privacidad, trazabilidad y continuidad.</p></div></div></div></div><div class="footer"><span>CUSTOM BUILD / PRODUCCIÓN</span><span>04 / 14</span></div></section>
+<section class="slide brand" id="s5"><div class="kicker reveal">Qué hacemos</div><div class="reveal" style="margin-top:3vh"><h2>Tres frentes. Un mismo objetivo: mejorar la operación.</h2></div><div class="eindex reveal"><div class="erow"><div class="idx">01</div><h3>Procesos internos</h3><p>Automatizar tareas, conectar sistemas y reducir trabajo manual.</p></div><div class="erow"><div class="idx">02</div><h3>IA integrada al producto</h3><p>Incorporar capacidades útiles dentro de productos y servicios existentes.</p></div><div class="erow"><div class="idx">03</div><h3>Adopción y gobernanza</h3><p>Capacitar, definir reglas y dejar capacidad instalada.</p></div></div><div class="footer"><span>FOCO DE SERVICIO</span><span>05 / 14</span></div></section>
+<section class="slide" id="s6"><div class="kicker reveal">Procesos internos</div><div class="ledger-intro reveal"><p class="lead">Priorizamos procesos con volumen, repetición o fricción, donde reducir trabajo manual pueda traducirse en menos tiempo, menor costo o mejor calidad.</p></div><div class="usecase-index reveal"><div class="usecase-row lrow"><div class="idx usecase-num">01</div><h3>Soporte</h3><p>Routing, respuestas sugeridas, casos repetitivos.</p></div><div class="usecase-row lrow"><div class="idx usecase-num">02</div><h3>Ventas / CRM</h3><p>Registro, próximos pasos, priorización.</p></div><div class="usecase-row lrow"><div class="idx usecase-num">03</div><h3>Finanzas</h3><p>Lectura, extracción, validación y control.</p></div><div class="usecase-row lrow"><div class="idx usecase-num">04</div><h3>Conocimiento</h3><p>Búsqueda interna con contexto y permisos.</p></div><div class="usecase-row lrow"><div class="idx usecase-num">05</div><h3>Marketing</h3><p>Reutilización, research y operaciones.</p></div></div><div class="footer"><span>CASOS DE USO</span><span>06 / 14</span></div></section>
+<section class="slide alt section-title-spaced" id="s7"><div class="kicker reveal">IA integrada al producto</div><div class="reveal"><h2>Capacidades que mejoran la experiencia del usuario y la operación del producto.</h2></div><div class="hub reveal"><svg aria-hidden="true" class="hub-connectors-v16" preserveAspectRatio="none" viewBox="0 0 100 100"><polyline fill="none" points="29,25 34,25 34,40 38,40" stroke="currentColor" stroke-width="0.35" vector-effect="non-scaling-stroke"></polyline><polyline fill="none" points="71,25 66,25 66,40 62,40" stroke="currentColor" stroke-width="0.35" vector-effect="non-scaling-stroke"></polyline><polyline fill="none" points="29,75 34,75 34,60 38,60" stroke="currentColor" stroke-width="0.35" vector-effect="non-scaling-stroke"></polyline><polyline fill="none" points="71,75 66,75 66,60 62,60" stroke="currentColor" stroke-width="0.35" vector-effect="non-scaling-stroke"></polyline></svg><div class="center"><svg aria-hidden="true" class="brand-icon node-icon" fill="none" focusable="false" stroke="currentColor" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="1.5" viewbox="0 0 24 24"><rect height="16" rx="1" width="16" x="4" y="4"></rect><rect height="6" rx="0.5" width="6" x="9" y="9"></rect></svg><div class="meta">Producto o servicio existente</div><h3>IA integrada donde el usuario ya trabaja.</h3></div><div class="node n1"><svg aria-hidden="true" class="brand-icon node-icon" fill="none" focusable="false" stroke="currentColor" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="1.5" viewbox="0 0 24 24"><circle cx="10" cy="10" r="5"></circle><path d="M14 14L19 19"></path></svg><h3>Búsqueda y recomendación</h3><p>Entender consultas en lenguaje natural y señales de comportamiento para mejorar descubrimiento, relevancia y conversión.</p></div><div class="node n2"><svg aria-hidden="true" class="brand-icon node-icon" fill="none" focusable="false" stroke="currentColor" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="1.5" viewbox="0 0 24 24"><rect height="14" rx="1" width="14" x="5" y="5"></rect><path d="M9 12H15"></path></svg><h3>Copilotos nativos</h3><p>Asistentes dentro del producto que redactan, resumen, generan, explican o ejecutan tareas sin sacar al usuario de su flujo.</p></div><div class="node n3"><svg aria-hidden="true" class="brand-icon node-icon" fill="none" focusable="false" stroke="currentColor" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="1.5" viewbox="0 0 24 24"><path d="M12 3L21 12L12 21L3 12L12 3"></path></svg><h3>Predicción y decisión</h3><p>Modelos que detectan patrones, anticipan riesgo o demanda y convierten datos operativos en recomendaciones o acciones.</p></div><div class="node n4"><svg aria-hidden="true" class="brand-icon node-icon" fill="none" focusable="false" stroke="currentColor" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="1.5" viewbox="0 0 24 24"><circle cx="12" cy="8" r="3.5"></circle><path d="M5 20V16H19V20"></path></svg><h3>Personalización</h3><p>Experiencias adaptadas según perfil, contexto y comportamiento.</p></div></div><div class="footer"><span>PRODUCTO / SERVICIO</span><span>07 / 14</span></div></section>
+<section class="slide dark section-title-spaced" id="s8"><div class="kicker reveal">Ejemplos</div><div class="reveal"><h2>La misma capacidad cambia de forma según el producto.</h2></div><div class="industry-ledger-v09 reveal"><div class="industry-row-v09"><div class="industry-name-v09"><div class="idx">01</div><h3>E-commerce</h3></div><div class="industry-points-v09"><p>Motores de recomendación hiperpersonalizados.</p><p>Búsqueda visual e inteligente.</p><p>Gestión dinámica de precios.</p></div></div><div class="industry-row-v09"><div class="industry-name-v09"><div class="idx">02</div><h3>Multimedia y streaming</h3></div><div class="industry-points-v09"><p>Generación de subtítulos y doblaje automático.</p><p>Análisis de métricas y proyección sobre KPIs históricos.</p></div></div><div class="industry-row-v09"><div class="industry-name-v09"><div class="idx">03</div><h3>Fintech</h3></div><div class="industry-points-v09"><p>Detección y prevención de fraudes.</p><p>Asesores financieros automatizados.</p></div></div><div class="industry-row-v09"><div class="industry-name-v09"><div class="idx">04</div><h3>EdTech</h3></div><div class="industry-points-v09"><p>Rutas de aprendizaje adaptativas.</p><p>Tutores virtuales.</p><p>Evaluación y feedback automatizado.</p></div></div></div><div class="footer"><span>EJEMPLOS DE PRODUCTO</span><span>08 / 14</span></div></section>
+<section class="slide gov-air" id="s9"><div class="kicker reveal">Adopción y gobernanza de IA</div><div class="gov-title-v16 reveal"><h2>Gobernar la IA es definir reglas, responsabilidades y continuidad.</h2></div><div class="grid gov"><div class="c7 reveal"><p class="lead">La adopción de IA no depende solamente de implementar herramientas. También requiere definir cómo se utilizan, con qué información, bajo qué criterios y con qué responsabilidades.</p><div class="govlist"><div class="gitem"><div class="idx">01</div><p>Capacitación a medida según equipos, roles y casos de uso.</p></div><div class="gitem"><div class="idx">02</div><p>Políticas de uso de IA.</p></div><div class="gitem"><div class="idx">03</div><p>Selección y gobernanza de modelos y proveedores.</p></div><div class="gitem"><div class="idx">04</div><p>Seguridad, privacidad y manejo de datos.</p></div><div class="gitem"><div class="idx">05</div><p>Permisos y responsabilidades.</p></div><div class="gitem"><div class="idx">06</div><p>Documentación y buenas prácticas.</p></div><div class="gitem"><div class="idx">07</div><p>Optimización del uso según costos y disponibilidad.</p></div></div></div><div class="c5 reveal"><div class="triad"><span>seguro.</span><span>consistente.</span><span>sostenible.</span></div><div class="callout"><span class="meta">Continuidad y autonomía</span><p>Buscamos que la organización pueda administrar las soluciones implementadas y no dependa permanentemente de proveedores externos.</p></div></div></div><div class="footer"><span>GOBERNANZA / CONTINUIDAD</span><span>09 / 14</span></div></section>
+<section class="slide alt" id="s10"><div class="kicker reveal">Equipo</div><div class="reveal"><h2>Experiencia complementaria para llevar IA a producción.</h2></div><div class="team reveal"><div class="person"><h3>Daniel Lerner</h3><div class="role">Consultoría · Infraestructura · Datos</div><p>Consultor IT con más de 20 años de experiencia en consultoría, gestión, datos, servidores, cloud, integraciones, optimización y soporte preventa y postventa.</p></div><div class="person"><h3>Martin Rosbier</h3><div class="role">Software · Arquitectura · Integraciones</div><p>Analista de Sistemas y Licenciado en Comunicación, especializado en desarrollo de software, arquitectura, APIs, integraciones, cloud y automatización.</p></div><div class="person"><h3>Nico Santos</h3><div class="role">Producto · Roadmap · Priorización</div><p>Product Manager técnico con experiencia en producto, roadmap y plataformas. Conecta negocio, usuarios y equipos técnicos para priorizar soluciones de IA aplicables.</p></div></div><div class="footer"><span>EQUIPO</span><span>10 / 14</span></div></section>
+<section class="slide" id="s11"><div class="kicker reveal">Impacto y retorno</div><div class="reveal" style="margin-top:4vh"><h2>Cada implementación parte de una mejora concreta que podamos identificar y medir antes y después.</h2></div><div class="ledger reveal"><div class="lrow"><div class="idx">01</div><h3>Tiempo y productividad</h3><p>Reducir tareas manuales, tiempos de respuesta y tiempos de ejecución.</p></div><div class="lrow"><div class="idx">02</div><h3>Calidad y eficiencia</h3><p>Reducir errores, retrabajo y costo por operación.</p></div><div class="lrow"><div class="idx">03</div><h3>Escalabilidad</h3><p>Aumentar el volumen procesado sin que los costos operativos crezcan en la misma proporción.</p></div><div class="lrow"><div class="idx">04</div><h3>Producto</h3><p>Mejorar conversión, uso, retención o valor entregado mediante nuevas capacidades.</p></div><div class="lrow"><div class="idx">05</div><h3>Información y decisiones</h3><p>Reducir el tiempo necesario para encontrar, consolidar y utilizar información distribuida entre sistemas.</p></div></div><div class="footer"><span>MEDICIÓN DE IMPACTO</span><span>11 / 14</span></div></section>
+<section class="slide alt" id="s12"><div class="kicker reveal">Evidencia de mercado</div><div class="evidence-head-v16 reveal"><h2>Los estudios relevados muestran mejoras medibles en productividad, tiempo, calidad y costos.</h2><p class="evidence-context-v16">Resultados reportados en estudios y encuestas externas sobre tareas y operaciones adecuadas para IA.</p></div><div class="evidence-v16 reveal"><div class="metric metric-primary-v16"><div class="num">+14%</div><div class="mt">de productividad en agentes de soporte con asistencia de IA.</div><div class="src">NBER · estudio sobre 5.179 agentes · nber.org/papers/w31161</div></div><div class="metric-secondary-stack-v16"><div class="metric metric-secondary-v16"><div class="num">25% / +40%</div><div class="mt">menos tiempo y mayor calidad en tareas adecuadas para IA.</div><div class="src">Harvard Business School + BCG · 758 consultores · aiinstitute.hbs.edu</div></div><div class="metric metric-secondary-v16"><div class="num">49%</div><div class="mt">reporta reducción de costos en operaciones de servicio.</div><div class="src">Stanford AI Index 2025 · la mayoría de los ahorros reportados sigue por debajo del 10%</div></div></div></div><div class="footer"><span>EVIDENCIA EXTERNA</span><span>12 / 14</span></div></section>
+<section class="slide" id="s13"><div class="kicker reveal">Experiencia / casos / evidencia</div><div class="grid exp-v16"><div class="c4 reveal"><h2>La IA necesita convivir con sistemas reales.</h2><p class="lead" style="margin-top:26px">El equipo combina experiencia en desarrollo de software, arquitectura, cloud, integraciones, automatización, datos y operación de sistemas.</p></div><div class="c8 system-diagram-v16 reveal"><div class="diagram-boundary-label-v16">SISTEMAS REALES</div><svg aria-hidden="true" class="system-connectors-v16" preserveAspectRatio="none" viewBox="0 0 100 100"><polyline fill="none" points="27,28 36,28 36,50 43,50" stroke="currentColor" stroke-width="0.4" vector-effect="non-scaling-stroke"></polyline><polyline fill="none" points="27,72 36,72 36,50 43,50" stroke="currentColor" stroke-width="0.4" vector-effect="non-scaling-stroke"></polyline><polyline fill="none" points="57,50 64,50 64,28 73,28" stroke="currentColor" stroke-width="0.4" vector-effect="non-scaling-stroke"></polyline><polyline fill="none" points="57,50 64,50 64,72 73,72" stroke="currentColor" stroke-width="0.4" vector-effect="non-scaling-stroke"></polyline></svg><div class="sys-node-v16 sys-a motion-item motion-up" style="--motion-order:2"><svg aria-hidden="true" class="brand-icon node-icon" fill="none" focusable="false" stroke="currentColor" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="1.5" viewBox="0 0 24 24"><rect height="16" rx="1" width="16" x="4" y="4"></rect><rect height="6" rx="0.5" width="6" x="9" y="9"></rect></svg><h3>Cloud + backend</h3><p>Arquitecturas cloud y servicios backend.</p></div><div class="sys-node-v16 sys-b motion-item motion-up" style="--motion-order:3"><svg aria-hidden="true" class="brand-icon node-icon" fill="none" focusable="false" stroke="currentColor" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="1.5" viewBox="0 0 24 24"><rect height="16" rx="1" width="14" x="5" y="4"></rect><path d="M5 9H19"></path><path d="M5 14H19"></path></svg><h3>Datos</h3><p>Procesamiento y movimiento entre sistemas.</p></div><div class="sys-node-v16 sys-c active motion-item motion-up" style="--motion-order:4"><svg aria-hidden="true" class="brand-icon node-icon" fill="none" focusable="false" stroke="currentColor" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="1.5" viewBox="0 0 24 24"><rect height="8" rx="1" width="8" x="3" y="3"></rect><rect height="8" rx="1" width="8" x="13" y="13"></rect><path d="M11 11L13 13"></path></svg><h3>Integración</h3><p>APIs, servicios y herramientas existentes.</p></div><div class="sys-node-v16 sys-d motion-item motion-up" style="--motion-order:5"><svg aria-hidden="true" class="brand-icon node-icon" fill="none" focusable="false" stroke="currentColor" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="1.5" viewBox="0 0 24 24"><rect height="14" rx="1" width="14" x="5" y="5"></rect><path d="M8 5H16"></path><path d="M13.5 2.5L16 5L13.5 7.5"></path></svg><h3>Automatización</h3><p>Procesos y workflows internos.</p></div><div class="sys-node-v16 sys-e motion-item motion-up" style="--motion-order:6"><svg aria-hidden="true" class="brand-icon node-icon" fill="none" focusable="false" stroke="currentColor" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="1.5" viewBox="0 0 24 24"><rect height="16" rx="1" width="16" x="4" y="4"></rect><path d="M8 12H16"></path></svg><h3>Producto</h3><p>Herramientas internas y capacidades dentro de productos digitales.</p></div><div class="controls-strip-v16 motion-item motion-up" style="--motion-order:7"><svg aria-hidden="true" class="brand-icon controls-icon-v16" fill="none" focusable="false" stroke="currentColor" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="1.5" viewBox="0 0 24 24"><rect height="14" rx="1" width="14" x="5" y="5"></rect><path d="M8 12L11 15L16 9"></path></svg><div class="controls-copy-v16"><h3>Controles</h3><p>Permisos, seguridad y operación atraviesan toda la solución.</p></div></div></div></div><div class="footer"><span>CAPACIDADES DEL EQUIPO</span><span>13 / 14</span></div></section>
+<section class="slide dark" id="s14"><div class="kicker reveal">Próximo paso</div><div class="close"><div class="reveal"><h2>Implementar herramientas no alcanza.</h2><p class="lead" style="margin-top:28px">Definimos cómo se usan, con qué datos, bajo qué reglas y quién puede decidir.</p></div><div class="cside reveal"><div class="cpoint"><h3>Gobernanza</h3><p>Políticas, seguridad, proveedores, permisos y costos.</p></div><div class="cpoint"><h3>Continuidad</h3><p>Documentación, capacitación y criterios para operar lo implementado.</p></div></div></div><div class="cta reveal"><div class="meta">Próximo paso</div><strong>Workshop de oportunidades para definir un piloto de alto impacto.</strong><div class="arrow">→</div></div><div class="footer"><span>CIERRE</span><span>14 / 14</span></div></section>
+</div>
+<div class="nav"><button aria-label="Slide anterior" id="prev">↑</button><span class="count" id="count">01 / 14</span><button aria-label="Slide siguiente" id="next">↓</button></div>
+<script>
+const deck=document.querySelector('.deck');
+const slides=[...document.querySelectorAll('.slide')];
+const count=document.getElementById('count');
+const prev=document.getElementById('prev');
+const next=document.getElementById('next');
+const reducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+const MOTION_MS=reducedMotion ? 0 : 460;
+const COUNTER_MS=525;
+let current=0;
+let locked=false;
+let touchStartY=null;
+let counterTimeout=null;
+
+const MOTION_GROUPS=[
+  {selector:'.kicker, .mark', type:'up'},
+  {selector:'h1, h2, .lead', type:'up'},
+  {selector:'.ghost', type:'fade'},
+  {selector:'.prow, .erow, .lrow, .industry-row-v09, .gitem, .person, .cpoint', type:'up'},
+  {selector:'.impact-square', type:'side-alt'},
+  {selector:'.mosaic-box', type:'side-alt'},
+  {selector:'.center', type:'scale'},
+  {selector:'.node.n1, .node.n3', type:'side-left'},
+  {selector:'.node.n2, .node.n4', type:'side-right'},
+  {selector:'.line, .dot', type:'fade'},
+  {selector:'.metric', type:'up'},
+  {selector:'.triad span', type:'side-right'},
+  {selector:'.callout, .principle, .cta, .footer', type:'up'}
+];
+
+function applyMotionClasses(){
+  slides.forEach(slide=>{
+    let order=0;
+    const seen=new Set();
+    MOTION_GROUPS.forEach(group=>{
+      const nodes=[...slide.querySelectorAll(group.selector)];
+      nodes.forEach((el,index)=>{
+        if(seen.has(el)) return;
+        seen.add(el);
+        el.classList.add('motion-item');
+        if(group.type==='up') el.classList.add('motion-up');
+        else if(group.type==='side-left') el.classList.add('motion-side-left');
+        else if(group.type==='side-right') el.classList.add('motion-side-right');
+        else if(group.type==='fade') el.classList.add('motion-fade');
+        else if(group.type==='scale') el.classList.add('motion-scale');
+        else if(group.type==='side-alt') el.classList.add(index % 2 === 0 ? 'motion-side-right' : 'motion-side-left');
+        else el.classList.add('motion-up');
+        el.style.setProperty('--motion-order', order++);
+      });
+    });
+
+    slide.querySelectorAll('.idx, .bg-num, .num').forEach(el=>{
+      const finalText=el.textContent.trim();
+      el.dataset.finalText=finalText;
+      el.classList.add('count-up');
+      /* Keep the real value rendered. We only zero a slide immediately before
+         it enters, while it is still fully off-screen. */
+      el.textContent=finalText;
+    });
+  });
+}
+
+function escapeRegExp(str){
+  return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
+function parseNumberTokens(text){
+  const matches=[...text.matchAll(/-?\d+(?:\.\d+)?/g)];
+  return matches.map(match=>{
+    const raw=match[0];
+    const rawAbs=raw.replace('-', '');
+    const parts=rawAbs.split('.');
+    const intPart=parts[0] || '0';
+    const fracPart=parts[1] || '';
+    return {
+      raw,
+      value:parseFloat(raw),
+      decimals:fracPart.length,
+      pad:/^0\d+$/.test(intPart) ? intPart.length : 0
+    };
+  });
+}
+
+function zeroToken(token){
+  /* Counters never display a synthetic zero. Start at 1 instead; padded
+     ordinals such as 01 therefore remain valid even before the count begins. */
+  if(token.decimals > 0){
+    const intPart=token.pad ? '1'.padStart(token.pad,'0') : '1';
+    return `${intPart}.${'0'.repeat(token.decimals)}`;
+  }
+  return token.pad ? '1'.padStart(token.pad,'0') : '1';
+}
+
+function zeroedText(text){
+  const tokens=parseNumberTokens(text);
+  let i=0;
+  return text.replace(/-?\d+(?:\.\d+)?/g,()=>zeroToken(tokens[i++]));
+}
+
+function formatToken(token, progress){
+  const startValue = token.value < 0 ? -1 : 1;
+  const value = startValue + (token.value - startValue) * progress;
+  if(token.decimals > 0){
+    const abs=Math.abs(value).toFixed(token.decimals);
+    const [intPart, fracPart=''] = abs.split('.');
+    const paddedInt=token.pad ? intPart.padStart(token.pad, '0') : intPart;
+    return `${value < 0 ? '-' : ''}${paddedInt}.${fracPart}`;
+  }
+  const rounded=Math.round(value);
+  const absInt=Math.abs(rounded).toString();
+  const paddedInt=token.pad ? absInt.padStart(token.pad, '0') : absInt;
+  return `${rounded < 0 ? '-' : ''}${paddedInt}`;
+}
+
+function interpolatedText(text, progress){
+  const tokens=parseNumberTokens(text);
+  if(!tokens.length) return text;
+  let i=0;
+  return text.replace(/-?\d+(?:\.\d+)?/g,()=>formatToken(tokens[i++], progress));
+}
+
+function resetCounter(el){
+  if(el._raf){
+    cancelAnimationFrame(el._raf);
+    el._raf=null;
+  }
+  if(reducedMotion) {
+    el.textContent=el.dataset.finalText || el.textContent;
+    return;
+  }
+  el.textContent=zeroedText(el.dataset.finalText || el.textContent);
+}
+
+function resetCounters(slide){
+  slide.querySelectorAll('.count-up').forEach(resetCounter);
+}
+
+function animateCounter(el, delay=0, duration=COUNTER_MS){
+  const finalText=el.dataset.finalText || el.textContent.trim();
+  const tokens=parseNumberTokens(finalText);
+  if(!tokens.length){
+    el.textContent=finalText;
+    return;
+  }
+  if(reducedMotion){
+    el.textContent=finalText;
+    return;
+  }
+  if(el._raf){
+    cancelAnimationFrame(el._raf);
+    el._raf=null;
+  }
+  const start=performance.now()+delay;
+  function frame(now){
+    if(now < start){
+      el._raf=requestAnimationFrame(frame);
+      return;
+    }
+    const t=Math.min(1,(now-start)/duration);
+    const eased=1-Math.pow(1-t,3);
+    el.textContent=interpolatedText(finalText, eased);
+    if(t < 1){
+      el._raf=requestAnimationFrame(frame);
+    }else{
+      el.textContent=finalText;
+      el._raf=null;
+    }
+  }
+  el._raf=requestAnimationFrame(frame);
+}
+
+function animateCounters(slide){
+  const isEvidenceSlide=slide.id==='s12';
+  const duration=isEvidenceSlide ? 1900 : COUNTER_MS;
+  const stagger=isEvidenceSlide ? 110 : 34;
+  slide.querySelectorAll('.count-up').forEach((el,i)=>animateCounter(el, i*stagger, duration));
+}
+
+function prepareCountersForEntry(slide){
+  if(reducedMotion) return;
+  slide.querySelectorAll('.count-up').forEach(resetCounter);
+}
+
+function render(animate=true, prepared=false){
+  slides.forEach((slide,i)=>{
+    slide.classList.toggle('is-before',i<current);
+    slide.classList.toggle('is-active',i===current);
+    slide.classList.toggle('is-after',i>current);
+    slide.setAttribute('aria-hidden',i===current?'false':'true');
+    /* Important: never reset counters on outgoing/inactive slides. Their final
+       value remains visible throughout the transition instead of flashing 00. */
+  });
+  count.textContent=String(current+1).padStart(2,'0')+' / '+String(slides.length).padStart(2,'0');
+  if(counterTimeout) clearTimeout(counterTimeout);
+  if(animate){
+    if(!prepared) prepareCountersForEntry(slides[current]);
+    counterTimeout=window.setTimeout(()=>animateCounters(slides[current]), reducedMotion ? 0 : 55);
+  }else{
+    slides[current].querySelectorAll('.count-up').forEach(el=>el.textContent=el.dataset.finalText || el.textContent);
+  }
+}
+
+function go(i){
+  const target=Math.max(0,Math.min(slides.length-1,i));
+  if(target===current || locked) return;
+
+  /* Prepare only the incoming slide while it is still completely off-screen. */
+  prepareCountersForEntry(slides[target]);
+
+  current=target;
+  locked=true;
+  render(true,true);
+  history.replaceState(null,'','#'+slides[current].id);
+  window.setTimeout(()=>{locked=false},MOTION_MS);
+}
+
+prev.addEventListener('click',()=>go(current-1));
+next.addEventListener('click',()=>go(current+1));
+
+addEventListener('keydown',e=>{
+  if(['ArrowDown','ArrowRight','PageDown',' '].includes(e.key)){
+    e.preventDefault();
+    go(current+1);
+  }
+  if(['ArrowUp','ArrowLeft','PageUp'].includes(e.key)){
+    e.preventDefault();
+    go(current-1);
+  }
+  if(e.key==='Home'){e.preventDefault();go(0)}
+  if(e.key==='End'){e.preventDefault();go(slides.length-1)}
+});
+
+addEventListener('wheel',e=>{
+  e.preventDefault();
+  if(Math.abs(e.deltaY)<12 || locked) return;
+  go(current+(e.deltaY>0?1:-1));
+},{passive:false});
+
+addEventListener('touchstart',e=>{
+  touchStartY=e.changedTouches[0]?.clientY ?? null;
+},{passive:true});
+addEventListener('touchend',e=>{
+  if(touchStartY===null || locked) return;
+  const endY=e.changedTouches[0]?.clientY ?? touchStartY;
+  const delta=touchStartY-endY;
+  touchStartY=null;
+  if(Math.abs(delta)>45) go(current+(delta>0?1:-1));
+},{passive:true});
+
+applyMotionClasses();
+const hashIndex=slides.findIndex(s=>'#'+s.id===location.hash);
+if(hashIndex>=0) current=hashIndex;
+render(true);
+requestAnimationFrame(()=>deck.classList.add('ready'));
+</script>
+</body>
+</html>
